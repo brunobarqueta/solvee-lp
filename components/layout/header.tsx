@@ -26,7 +26,8 @@ export function Header() {
         </nav>
 
         <Button
-          className="rounded-full"
+          className="rounded-full shadow-[0_0_0_0_transparent] transition-shadow duration-300 hover:shadow-[0_0_24px_-6px_var(--primary)]"
+          nativeButton={false}
           render={
             <a href={CAL_LINK} target="_blank" rel="noopener noreferrer">
               Book a call

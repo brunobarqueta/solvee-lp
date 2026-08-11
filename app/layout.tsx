@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { ScrollProgress } from "@/components/motion/scroll-progress";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-display",
@@ -26,9 +27,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased dark`}
+      className={`${spaceGrotesk.variable} ${inter.variable} h-full scroll-smooth antialiased dark`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <ScrollProgress />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

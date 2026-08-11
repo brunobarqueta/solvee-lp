@@ -1,13 +1,13 @@
 // TODO: replace with the real Cal.com / booking link
-export const CAL_LINK = "https://cal.com/solvee";
+export const CAL_LINK = "https://cal.com/bruno-solvee/20min";
 
 // TODO: replace with the real contact email
-export const CONTACT_EMAIL = "hello@solvee.dev";
+export const CONTACT_EMAIL = "contact@solvee.dev";
 
 export const NAV_LINKS = [
+  { label: "Why us", href: "#stats" },
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
-  { label: "Work", href: "#testimonials" },
 ] as const;
 
 // TODO: replace with the real social links

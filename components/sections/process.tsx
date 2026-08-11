@@ -28,7 +28,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="border-t border-border bg-background-alt px-6 py-24 md:px-8 md:py-32"
+      className="scroll-mt-20 border-t border-border px-6 py-24 md:px-8 md:py-32"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading

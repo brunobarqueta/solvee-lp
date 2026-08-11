@@ -2,6 +2,7 @@ import { ArrowDown } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/fade-in";
+import { HighlightUnderline } from "@/components/motion/highlight-underline";
 import { CAL_LINK } from "@/lib/constants";
 
 export function Hero() {
@@ -23,7 +24,8 @@ export function Hero() {
 
       <FadeIn delay={0.1}>
         <h1 className="mt-8 max-w-4xl font-display text-5xl font-bold tracking-tight text-balance text-foreground sm:text-6xl md:text-7xl">
-          Shopify is our language. No BS.
+          Shopify is our language.{" "}
+          <HighlightUnderline delay={0.7}>No BS.</HighlightUnderline>
         </h1>
       </FadeIn>
 
@@ -31,7 +33,7 @@ export function Hero() {
         <p className="mt-6 max-w-2xl text-balance text-lg text-muted-foreground md:text-xl">
           We build, migrate, and scale Shopify stores for brands who are done
           explaining their business to developers who don&apos;t get it. 3+
-          years, dozens of stores, zero fluff.
+          years, 30+ stores, zero fluff.
         </p>
       </FadeIn>
 
@@ -39,7 +41,8 @@ export function Hero() {
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
           <Button
             size="lg"
-            className="rounded-full px-8 text-base"
+            nativeButton={false}
+            className="rounded-full px-8 text-base shadow-[0_0_0_0_transparent] transition-shadow duration-300 hover:shadow-[0_0_36px_-8px_var(--primary)]"
             render={
               <a href={CAL_LINK} target="_blank" rel="noopener noreferrer">
                 Book a call

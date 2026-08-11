@@ -17,6 +17,7 @@ export function FinalCta() {
           <Button
             size="lg"
             variant="secondary"
+            nativeButton={false}
             className="mt-8 rounded-full bg-primary-foreground px-8 text-base text-primary hover:bg-primary-foreground/90"
             render={
               <a href={CAL_LINK} target="_blank" rel="noopener noreferrer">
