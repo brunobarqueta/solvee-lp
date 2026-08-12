@@ -17,10 +17,24 @@ const inter = Inter({
   weight: ["400", "500", "600"],
 });
 
+// TODO: replace with the real production domain once it's live
 export const metadata: Metadata = {
+  metadataBase: new URL("https://solvee.dev"),
   title: "Solvee — Shopify Development, No BS",
   description:
-    "Tailored Shopify development for brands who are done explaining their business to developers who don't get it. 3+ years, dozens of stores, zero fluff.",
+    "Tailored Shopify development for brands who are done explaining their business to developers who don't get it. 3+ years, 30+ stores, zero fluff.",
+  openGraph: {
+    title: "Solvee — Shopify Development, No BS",
+    description:
+      "Tailored Shopify development for brands who are done explaining their business to developers who don't get it.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Solvee — Shopify Development, No BS",
+    description:
+      "Tailored Shopify development for brands who are done explaining their business to developers who don't get it.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

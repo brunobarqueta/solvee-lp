@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { CAL_LINK, NAV_LINKS } from "@/lib/constants";
 
@@ -6,11 +7,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-8">
-        <Link
-          href="/"
-          className="font-display text-xl font-bold tracking-tight text-foreground"
-        >
-          Solvee<span className="text-primary">.</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/brand/solvee-concept-D-dualtone-onDark.png"
+            alt="Solvee"
+            width={4831}
+            height={1439}
+            priority
+            className="h-8 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

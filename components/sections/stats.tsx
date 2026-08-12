@@ -1,6 +1,7 @@
 import { SectionHeading } from "@/components/shared/section-heading";
 import { StatCounter } from "@/components/shared/stat-counter";
 import { FadeIn } from "@/components/motion/fade-in";
+import { PathRuleDraw } from "@/components/motion/path-rule-draw";
 
 const STATS = [
   { value: 3, suffix: "+", label: "Years shipping Shopify exclusively" },
@@ -11,7 +12,11 @@ const STATS = [
 export function Stats() {
   return (
     <section id="stats" className="scroll-mt-20 px-6 py-24 md:px-8 md:py-32">
-      <div className="mx-auto max-w-6xl">
+      <div className="relative mx-auto max-w-6xl">
+        <PathRuleDraw
+          variant={2}
+          className="pointer-events-none absolute -top-2 right-0 hidden w-28 text-primary md:block"
+        />
         <SectionHeading eyebrow="WHY SOLVEE" title="Not our first store" />
 
         <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3">

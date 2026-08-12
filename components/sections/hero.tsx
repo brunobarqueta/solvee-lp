@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/fade-in";
 import { HighlightUnderline } from "@/components/motion/highlight-underline";
+import { PathRuleDraw } from "@/components/motion/path-rule-draw";
 import { CAL_LINK } from "@/lib/constants";
 
 export function Hero() {
@@ -11,6 +12,12 @@ export function Hero() {
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_0%,color-mix(in_oklch,var(--primary),transparent_88%),transparent_60%)]"
+      />
+
+      <PathRuleDraw
+        variant={1}
+        delay={0.5}
+        className="pointer-events-none absolute right-6 top-24 hidden w-28 text-primary md:block lg:right-16"
       />
 
       <FadeIn>

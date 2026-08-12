@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/fade-in";
+import { PathRuleDraw } from "@/components/motion/path-rule-draw";
 import { CAL_LINK } from "@/lib/constants";
 
 export function FinalCta() {
   return (
     <section className="px-6 py-24 md:px-8 md:py-32">
       <FadeIn>
-        <div className="mx-auto max-w-4xl rounded-3xl bg-primary px-8 py-16 text-center md:px-16">
+        <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl bg-primary px-8 py-16 text-center md:px-16">
+          <PathRuleDraw
+            variant={1}
+            className="pointer-events-none absolute right-6 top-6 hidden w-28 text-primary-foreground/40 md:block"
+          />
           <h2 className="font-display text-3xl font-bold tracking-tight text-balance text-primary-foreground sm:text-4xl">
             Ready to stop explaining your business to developers?
           </h2>

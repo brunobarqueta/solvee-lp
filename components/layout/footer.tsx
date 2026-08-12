@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 import { CONTACT_EMAIL, SOCIAL_LINKS } from "@/lib/constants";
 
 export function Footer() {
@@ -7,9 +9,18 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-12 md:px-8">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
-            <span className="font-display text-lg font-bold text-foreground">
-              Solvee<span className="text-primary">.</span>
-            </span>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/brand/solvee-icon-concept-D-transparent.svg"
+                alt=""
+                width={143}
+                height={123}
+                className="h-6 w-auto"
+              />
+              <span className="font-display text-lg font-bold text-foreground">
+                Solvee
+              </span>
+            </div>
             <p className="mt-2 text-sm text-muted-foreground">
               Shopify development, no BS.
             </p>
@@ -37,8 +48,15 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-border pt-6 text-xs text-muted-foreground">
-          © 2026 Solvee. All rights reserved.
+        <div className="mt-10 flex flex-col-reverse items-start justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
+          <span>© 2026 Solvee. All rights reserved.</span>
+          <Badge
+            variant="secondary"
+            className="rounded-full border border-border px-3 py-1 text-[11px] font-semibold tracking-widest text-muted-foreground"
+          >
+            <span aria-hidden className="mr-1.5 size-1.5 rounded-full bg-primary" />
+            BUILT FOR SHOPIFY
+          </Badge>
         </div>
       </div>
     </footer>
