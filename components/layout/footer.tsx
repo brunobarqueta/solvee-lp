@@ -50,13 +50,6 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col-reverse items-start justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
           <span>© 2026 Solvee. All rights reserved.</span>
-          <Badge
-            variant="secondary"
-            className="rounded-full border border-border px-3 py-1 text-[11px] font-semibold tracking-widest text-muted-foreground"
-          >
-            <span aria-hidden className="mr-1.5 size-1.5 rounded-full bg-primary" />
-            BUILT FOR SHOPIFY
-          </Badge>
         </div>
       </div>
     </footer>

@@ -2,7 +2,7 @@
 export const CAL_LINK = "https://cal.com/bruno-solvee/20min";
 
 // TODO: replace with the real contact email
-export const CONTACT_EMAIL = "contact@solvee.dev";
+export const CONTACT_EMAIL = "contact@solvee.site";
 
 export const NAV_LINKS = [
   { label: "Why us", href: "#stats" },
@@ -12,7 +12,6 @@ export const NAV_LINKS = [
 
 // TODO: replace with the real social links
 export const SOCIAL_LINKS = [
-  { label: "Instagram", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "X", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/solveeit" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/solvee-shopify" },
 ] as const;
